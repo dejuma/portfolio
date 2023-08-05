@@ -1,6 +1,7 @@
 import Navbar from "@/components/NavBar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/Footer/Footer";
 import BrowserProgess from "@/components/BrowserProgress/BrowserProgess";
 
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );

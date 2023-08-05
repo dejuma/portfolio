@@ -16,10 +16,6 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  const handleNavLinkClick = () => {
-    setNav(false);
-  };
-
   return (
     <div className="fixed w-full top-0 left-0 h-20 shadow-xl z-[100] transition-all duration-500">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -32,8 +28,7 @@ const Navbar = () => {
             <li key={link.id}>
               <Link
                 className="text-white font-medium text-lg ml-10 uppercase hover:border-b"
-                href=""
-                onClick={handleNavLinkClick} // Close the sidebar on link click
+                href={link.url}
               >
                 {link.title}
               </Link>
@@ -45,8 +40,18 @@ const Navbar = () => {
         </div>
       </div>
 
-      {nav && (
-        <div className="fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-1000">
+      <div
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
+      >
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500"
+          }
+        >
           <div>
             <div className="flex w-full items-center justify-between">
               <Image
@@ -64,7 +69,7 @@ const Navbar = () => {
             </div>
             <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
-                Lets Build something awesome
+                Lets Build something awseome
               </p>
             </div>
           </div>
@@ -72,10 +77,7 @@ const Navbar = () => {
             <ul className="uppercase">
               {links.map((link) => (
                 <li className="py-4 text-sm" key={link.id}>
-                  <Link href={link.url} onClick={handleNavLinkClick}>
-                    {/* Close the sidebar on link click */}
-                    {link.title}
-                  </Link>
+                  <Link href={link.url}>{link.title}</Link>
                 </li>
               ))}
             </ul>
@@ -85,7 +87,7 @@ const Navbar = () => {
                 Let&apos;s Connect
               </p>
               <div className="flex items-center justify-between my-4 2-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg showdow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <Link
                     href="https://www.linkedin.com/in/olesin/"
                     target="blank"
@@ -93,12 +95,12 @@ const Navbar = () => {
                     <FaLinkedinIn />
                   </Link>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg showdow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <Link href="https://github.com/dejuma" target="blank">
                     <FaGithub />
                   </Link>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg showdow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <Link
                     href="https://www.linkedin.com/in/olesin/"
                     target="blank"
@@ -106,7 +108,7 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </Link>
                 </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <div className="rounded-full shadow-lg showdow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <Link href="https://github.com/dejuma" target="blank">
                     <BsFillPersonLinesFill />
                   </Link>
@@ -115,7 +117,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 };
