@@ -1,9 +1,12 @@
-import React from 'react'
+import Resume from "@/components/Resume/Resume";
+import React from "react";
 
 const Cv = () => {
   return (
-    <div>Cv</div>
-  )
-}
+    <div>
+      <Resume />
+    </div>
+  );
+};
 
-export default Cv
+export default Cv;

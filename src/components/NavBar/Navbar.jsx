@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div onClick={handleNav} className="md:hidden">
+        <div onClick={handleNav} className="md:hidden text-black">
           <AiOutlineMenu size={30} />
         </div>
       </div>
@@ -62,13 +62,13 @@ const Navbar = () => {
               />
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  text-black"
               >
                 <AiOutlineClose />
               </div>
             </div>
             <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4">
+              <p className="w-[85%] md:w-[90%] py-4 text-[#1f2937] ">
                 Lets Build something awseome
               </p>
             </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               {links.map((link) => (
-                <li className="py-4 text-sm" key={link.id}>
+                <li className="py-4 text-sm text-[#1f2937]" key={link.id}>
                   <Link href={link.url}>{link.title}</Link>
                 </li>
               ))}
@@ -86,7 +86,7 @@ const Navbar = () => {
                 {" "}
                 Let&apos;s Connect
               </p>
-              <div className="flex items-center justify-between my-4 2-full sm:w-[80%]">
+              <div className="flex items-center justify-between my-4 2-full text-[#1f2937] sm:w-[80%]">
                 <div className="rounded-full shadow-lg showdow-grey-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <Link
                     href="https://www.linkedin.com/in/olesin/"
