@@ -29,7 +29,7 @@ To build and deploy the portfolio, follow these steps:
 
 ## Contact
 
-- Name: Olu Olesin
+- Name: Oluwadunsin Olesin
 - Website: [olesin.me](https://olesin.me)
 - GitHub: [https://github.com/dejuma](https://github.com/dejuma)
 - LinkedIn: [https://www.linkedin.com/in/olesin/](https://www.linkedin.com/in/olesin/)
