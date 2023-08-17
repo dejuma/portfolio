@@ -5,12 +5,8 @@ import ProjectData from "./ProjectData";
 const ProjectsContent = () => {
   return (
     <div className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        {/* <h1 className="text-center font-bold text-4xl">
-          Projects
-          <hr className="w-6 h-1 mx-auto my-4 border-0 rounded" />
-        </h1> */}
-        <p className="uppercase text-xl tracking-widest text-[#E2C6BC]">
+      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+        <p className="uppercase text-xl pt-20 tracking-widest text-[#E2C6BC]">
           Projects
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>

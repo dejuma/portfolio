@@ -2,14 +2,10 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <div className="w-full md:h-screen  py-40 flex items-center ">
-      <div className="max-w-[1240px] m-auto">
+    <div className="w-full py-40 flex items-center ">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-2 justify-center">
         <div className="text-center mb-5">
-          <h1 className="text-4xl font-bold mb-0 text-[#E2C6BC]">
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-              Resume
-            </span>
-          </h1>
+          <h2 className="text-4xl font-bold mb-0 uppercase">Resume</h2>
         </div>
         <div className="row gap-5 justify-center">
           <div className="col-lg-11 col-xl-9 col-xxl-8">

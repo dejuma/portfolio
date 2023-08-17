@@ -9,9 +9,9 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const ContactPage = () => {
   return (
-    <div className="w-full lg:h-screen">
+    <div className="w-full pb-[153px]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="uppercase text-xl tracking-widest text-[#E2C6BC]">
+        <p className="uppercase text-xl pt-20 tracking-widest text-[#E2C6BC]">
           Contact
         </p>
         <h2 className="py-4 text-gray-100">Get In Touch</h2>
@@ -55,10 +55,7 @@ const ContactPage = () => {
                     </div>
                   </Link>
 
-                  <Link
-                    href="https://www.linkedin.com/in/olesin/"
-                    target="_blank"
-                  >
+                  <Link href="mailto:info@olesin.me">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
                       <AiOutlineMail />
                     </div>

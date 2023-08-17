@@ -7,11 +7,11 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const AboutContent = () => {
   return (
-    <div id="about" className="w-full md:h-screen  flex items-center ">
-      <div className="max-w-[1240px] m-auto">
+    <div id="about" className="w-full md:h-screen flex items-center mt-[-70px]">
+      <div className="max-w-[1240px] m-auto mx-auto px-8">
         <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
           <div className="col-span-2">
-            <p className="uppercase text-xl tracking-widest text-[#E2C6BC]">
+            <p className="uppercase text-xl tracking-widest pt-[100px] text-[#E2C6BC]">
               About
             </p>
             <h2 className="py-4 text-gray-100">Who I Am</h2>
@@ -34,9 +34,11 @@ const AboutContent = () => {
               website redevelopment for Crossways and Villages U3A, showcasing
               my skills in practical application.
             </p>
-            <p className="py-2 underline cursor-pointer">
-              Check out some of my latest projects.
-            </p>
+            <Link href="/projects">
+              <p className="py-4 underline cursor-pointer">
+                Check out some of my latest projects.
+              </p>
+            </Link>
           </div>
           <div className="w-full rounded-xl h-auto m-auto shadow-xl shadow-gray-400 p-1 flex items-center justify-center hover:scale-105 ease-in duration-300">
             <Image
