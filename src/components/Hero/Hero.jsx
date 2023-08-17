@@ -6,7 +6,7 @@ import { AiOutlineMail } from "react-icons/ai";
 
 export const Hero = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-300">
@@ -22,26 +22,29 @@ export const Hero = () => {
             like Java, SQL, C++, Python, React.js, and HTML/CSS.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link href="https://www.linkedin.com/in/olesin/" target="blank">
+            <Link href="https://www.linkedin.com/in/olesin/" target="_blank">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
-              </Link>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link href="https://github.com/dejuma" target="blank">
+              </div>
+            </Link>
+
+            <Link href="https://github.com/dejuma" target="_blank">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
-              </Link>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link href="https://www.linkedin.com/in/olesin/" target="blank">
+              </div>
+            </Link>
+
+            <Link href="https://www.linkedin.com/in/olesin/" target="_blank">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
-              </Link>
-            </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link href="https://github.com/dejuma" target="blank">
+              </div>
+            </Link>
+
+            <Link href="https://github.com/dejuma" target="_blank">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
