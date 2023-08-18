@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <div id="home" className="w-full h-screen text-center mb-[-5px]">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
@@ -51,3 +51,5 @@ export const Hero = () => {
     </div>
   );
 };
+
+export default Hero;

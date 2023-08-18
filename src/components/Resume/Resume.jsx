@@ -1,14 +1,15 @@
 import React from "react";
+import Link from "next/link";
 
 const Resume = () => {
   return (
-    <div className="w-full py-40 flex items-center ">
+    <div className="w-full py-40 flex items-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 justify-center">
         <div className="text-center mb-5">
           <h2 className="text-4xl font-bold mb-0 uppercase">Resume</h2>
         </div>
-        <div className="row gap-5 justify-center">
-          <div className="col-lg-11 col-xl-9 col-xxl-8">
+        <div className="grid gap-5 justify-center">
+          <div className="col-span-4">
             {/* Experience Section */}
             <section>
               <div className="flex items-center justify-between mb-4">
@@ -17,10 +18,15 @@ const Resume = () => {
                 </h2>
                 {/* Download resume button */}
                 {/* Note: Set the link href target to a PDF file within your project */}
-                <a className="btn btn-primary px-4 py-3" href="#!">
-                  <div className="inline-block bi bi-download me-2"></div>
+                <Link
+                  className="px-4 py-3 inline-flex items-center mt-4 text-white bg-blue-500  uppercase rounded hover:bg-blue-600 transition-colors"
+                  href="/assets/docs/JOlesinCV.pdf"
+                  download={"JOlesinCV.pdf"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Download Resume
-                </a>
+                </Link>
               </div>
               {/* Experience Card 1 */}
               <div className="card shadow border-0 rounded-xl mb-5 bg-[#1F2937]">
@@ -33,12 +39,8 @@ const Resume = () => {
                       <div className="font-bold text-[#E2C6BC]">
                         Web Developer
                       </div>
-                      <div className="text-muted text-[#9CA3AF]">
-                        Stark Industries
-                      </div>
-                      <div className="text-muted text-[#9CA3AF]">
-                        Los Angeles, CA
-                      </div>
+                      <div className="text-muted">Stark Industries</div>
+                      <div className="text-muted">Los Angeles, CA</div>
                     </div>
                     <div className="lg:ml-8">
                       <div className="text-gray-100">
@@ -62,12 +64,8 @@ const Resume = () => {
                       <div className="font-bold text-[#E2C6BC]">
                         SEM Specialist
                       </div>
-                      <div className="text-muted text-[#9CA3AF]">
-                        Wayne Enterprises
-                      </div>
-                      <div className="text-muted text-[#9CA3AF]">
-                        Gotham City, NY
-                      </div>
+                      <div className="text-muted">Wayne Enterprises</div>
+                      <div className="text-muted">Gotham City, NY</div>
                     </div>
                     <div className="lg:ml-8">
                       <div className="text-gray-100">
@@ -98,9 +96,7 @@ const Resume = () => {
                         <div className="font-bold text-[#E2C6BC]">
                           Barnett College
                         </div>
-                        <div className="text-muted text-[#9CA3AF]">
-                          Fairfield, NY
-                        </div>
+                        <div className="text-muted">Fairfield, NY</div>
                       </div>
                       <div className="italic text-gray-100">
                         <div className="text-muted">Master&apos;s</div>
@@ -128,9 +124,7 @@ const Resume = () => {
                       </div>
                       <div className="mb-2">
                         <div className="font-bold text-[#E2C6BC]">ULA</div>
-                        <div className="text-muted text-[#9CA3AF]">
-                          Los Angeles, CA
-                        </div>
+                        <div className="text-muted">Los Angeles, CA</div>
                       </div>
                       <div className="italic text-gray-100">
                         <div className="text-muted">Undergraduate</div>
