@@ -6,21 +6,14 @@ const ProjectCardData = [
     alt: "Sniway Entertainment",
     title: "Sniway Entertainment",
     text: "React JS",
-    source: "/projects/sniway",
+    // source: "/projects/sniway",
   },
   {
     imgsrc: sniwayImg,
     alt: "Sniway Entertainment",
     title: "Sniway Entertainment",
     text: "React JS",
-    source: "https://www.instagram.com/sniwayent/",
-  },
-  {
-    imgsrc: sniwayImg,
-    alt: "Sniway Entertainment",
-    title: "Sniway Entertainment",
-    text: "React JS",
-    source: "https://www.instagram.com/sniwayent/",
+    // source: "https://www.instagram.com/sniwayent/",
   },
 ];
 

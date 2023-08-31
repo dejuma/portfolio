@@ -4,7 +4,7 @@ import ProjectData from "./ProjectData";
 
 const ProjectsContent = () => {
   return (
-    <div className="w-full">
+    <div className="w-full pb-[407px] ">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="uppercase text-xl pt-20 tracking-widest text-[#E2C6BC]">
           Projects

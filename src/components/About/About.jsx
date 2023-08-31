@@ -7,7 +7,13 @@ import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
 const AboutContent = () => {
   return (
-    <div id="about" className="w-full md:h-screen flex items-center mt-[-70px]">
+    <div
+      id="about"
+      className="w-full md:h-screen flex items-center mt-[-50px]"
+      style={{
+        height: "auto",
+      }}
+    >
       <div className="max-w-[1240px] m-auto mx-auto px-8">
         <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
           <div className="col-span-2">

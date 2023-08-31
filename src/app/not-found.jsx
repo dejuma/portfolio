@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const NotFound = () => {
   return (
-    <div className="w-full h-screen text-center mb-[-5px]">
+    <div className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <Image

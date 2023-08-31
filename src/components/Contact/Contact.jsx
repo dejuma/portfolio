@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import contactImg from "/public/assets/contact.png";
 
-import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const ContactPage = () => {
   return (
-    <div className="w-full pb-[153px]">
+    <div className="w-full pb-[163px]">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="uppercase text-xl pt-20 tracking-widest text-[#E2C6BC]">
           Contact
