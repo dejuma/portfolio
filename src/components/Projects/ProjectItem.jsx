@@ -19,7 +19,7 @@ export const ProjectItem = (props) => {
           </h3>
           <p className="pb-4 pt-2 text-white text-center">{text}</p>
           {source.startsWith("/") ? ( // Check if it's an internal link or external URL
-            <Link href={source} target="_blank">
+            <Link href={source} target="_blank" rel="noopener noreferrer">
               <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
                 More Info
               </p>

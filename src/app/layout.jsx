@@ -4,7 +4,6 @@ import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/NavBar/Navbar";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

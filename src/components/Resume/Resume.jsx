@@ -8,16 +8,17 @@ const Resume = () => {
   return (
     <div className="w-full py-10 lg:py-20 xl:py-40 flex items-center">
       <div className="max-w-7xl w-full h-full mx-auto p-2 justify-center">
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 sm:py-10 md:py-10 lg:py-20">
           <h2 className="text-4xl font-bold mb-0 uppercase">Resume</h2>
         </div>
         <div className="grid gap-5 justify-center lg:grid-cols-2 xl:grid-cols-4">
           <div className="col-span-4">
             <section>
               <div className="flex items-center justify-between mb-4">
-                <h2 className="text-primary font-bold mb-0 text-[#E2C6BC]">
+                <h2 className="text-primary font-bold mb-0 mr-2 text-[#E2C6BC]">
                   Experience
                 </h2>
+
                 <Link
                   className="px-4 py-3 inline-flex items-center mt-4 text-white bg-blue-500 uppercase rounded hover:bg-blue-600 transition-colors"
                   href="/assets/docs/JOlesinCV.pdf"
@@ -25,8 +26,8 @@ const Resume = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiOutlineFileText /> {/* Add the FontAwesome icon */}
-                  Resume
+                  <AiOutlineFileText className="mr-2" />
+                  Download Resume
                 </Link>
               </div>
               {experienceData.map((item, index) => (

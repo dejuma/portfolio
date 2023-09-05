@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import SocialLink from "../Shared/SocialLink";
 import contactImg from "/public/assets/contact.png";
 
 import { AiOutlineMail } from "react-icons/ai";
@@ -9,15 +10,15 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const ContactPage = () => {
   return (
-    <div className="w-full pb-[163px]">
+    <div className="w-full min-h-94vh flex flex-col">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
-        <p className="uppercase text-xl pt-20 tracking-widest text-[#E2C6BC]">
+        <p className="uppercase text-xl tracking-widest text-[#E2C6BC]">
           Contact
         </p>
         <h2 className="py-4 text-gray-100">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-lg shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
                 <Image
@@ -40,39 +41,36 @@ const ContactPage = () => {
                   Connect With Me
                 </p>
                 <div className="flex items-center justify-between my-4 2-full  text-[#1f2937] sm:w-[80%]">
-                  <Link
+                  <SocialLink
                     href="https://www.linkedin.com/in/olesin/"
-                    target="_blank"
-                  >
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaLinkedinIn />
-                    </div>
-                  </Link>
+                    icon={<FaLinkedinIn />}
+                    label="LinkedIn"
+                  />
 
-                  <Link href="https://github.com/dejuma" target="_blank">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-                      <FaGithub />
-                    </div>
-                  </Link>
+                  <SocialLink
+                    href="https://github.com/dejuma"
+                    icon={<FaGithub />}
+                    label="GitHub"
+                  />
 
-                  <Link href="mailto:info@olesin.me">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-                      <AiOutlineMail />
-                    </div>
-                  </Link>
+                  <SocialLink
+                    href="mailto:info@olesin.me"
+                    icon={<AiOutlineMail />}
+                    label="Mail"
+                  />
 
-                  <Link href="https://github.com/dejuma" target="_blank">
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-                      <BsFillPersonLinesFill />
-                    </div>
-                  </Link>
+                  <SocialLink
+                    href="/contact"
+                    icon={<BsFillPersonLinesFill />}
+                    label="Contact"
+                  />
                 </div>
               </div>
             </div>
           </div>
 
           {/* right */}
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
+          <div className="col-span-3 w-full h-auto shadow-lg shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
               <form>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">

@@ -4,10 +4,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import links from "./Navbar-links";
+import SocialLink from "../Shared/SocialLink";
 
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+
+import DesktopNav from "./DesktopNav";
+import MobileNav from "./MobileNav";
+
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
@@ -54,107 +59,20 @@ const Navbar = () => {
           {" "}
           <Image src="/assets/logo.png" width={125} height={50} alt="logo" />
         </Link>
-        <ul className="hidden md:flex space-x-5">
-          {links.map((link) => (
-            <li key={link.id}>
-              <Link
-                className="text-white font-medium text-lg ml-10 uppercase hover:border-b"
-                href={link.url}
-              >
-                {link.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        {/* Use the DesktopNav component for the main navigation */}
+        <DesktopNav links={links} />
+
         <div onClick={handleNav} className="md:hidden text-black">
           <AiOutlineMenu color="white" size={30} />
         </div>
       </div>
-
-      <div
-        className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
-        }
-      >
-        <div
-          className={
-            nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-10 ease-in duration-500"
-          }
-        >
-          <div>
-            <div className="flex w-full items-center justify-between">
-              <Link href="/">
-                <Image
-                  src="/assets/logo-side.png"
-                  width={87}
-                  height={35}
-                  alt="logo"
-                />
-              </Link>
-              <div
-                onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer  text-black"
-              >
-                <AiOutlineClose />
-              </div>
-            </div>
-            <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4 text-[#1f2937] ">
-                Lets Build something awseome
-              </p>
-            </div>
-          </div>
-          <div className="py-4 flex flex-col">
-            <ul className="uppercase">
-              {links.map((link) => (
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm text-[#1f2937]"
-                  key={link.id}
-                >
-                  <Link href={link.url}>{link.title}</Link>
-                </li>
-              ))}
-            </ul>
-            <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
-                {" "}
-                Let&apos;s Connect
-              </p>
-              <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                <Link
-                  href="https://www.linkedin.com/in/olesin/"
-                  target="_blank"
-                >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                </Link>
-
-                <Link href="https://github.com/dejuma" target="_blank">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                </Link>
-
-                <Link href="mailto:info@olesin.me">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                </Link>
-
-                <Link href="https://github.com/dejuma" target="_blank">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsFillPersonLinesFill />
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Use the MobileNav component for the mobile menu */}
+      <MobileNav
+        nav={nav}
+        handleNav={handleNav}
+        links={links}
+        setNav={setNav}
+      />
     </div>
   );
 };

@@ -5,23 +5,23 @@ import { RiRadioButtonFill } from "react-icons/ri";
 
 const Sniway = () => {
   return (
-    <div className="w-full">
-      <div className="w-screen h-[30vh] lg:h-[40vh] relative">
+    <div className="w-full min-h-94vh overflow-hidden">
+      <header className="w-screen h-[30vh] lg:h-[40vh] relative">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
         <Image
           className="absolute z-1"
           fill
           style={{ objectFit: "cover" }}
           src={sniwayImg}
-          alt="/"
+          alt="Sniway Entertainment Logo"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-grey-100 z-10 p-2">
-          <h2 className="py-2">Sniway Entertainment</h2>
-          <h3> React JS / Tailwind</h3>
+          <h1 className="py-2">Sniway Entertainment</h1>
+          <h2>React JS / Tailwind</h2>
         </div>
-      </div>
+      </header>
 
-      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
+      <main className="max-w-screen-lg mx-auto p-2 md:grid md:grid-cols-5 gap-8 pt-8">
         <div className="col-span-4">
           <p className="uppercase">Project</p>
           <h2>Overview</h2>
@@ -40,10 +40,14 @@ const Sniway = () => {
             into the artists&apos; portfolios, discographies, and upcoming
             events, all at your fingertips. 🎶
           </p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <button className="px-8 py-2 mt-4 mr-8" aria-label="Demo">
+            Demo
+          </button>
+          <button className="px-8 py-2 mt-4" aria-label="Code">
+            Code
+          </button>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-lg shadow-gray-400 rounded-xl p-4">
+        <aside className="col-span-4 md:col-span-1 shadow-lg shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
@@ -61,8 +65,8 @@ const Sniway = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </aside>
+      </main>
     </div>
   );
 };

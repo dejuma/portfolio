@@ -9,7 +9,7 @@ const AboutContent = () => {
   return (
     <div
       id="about"
-      className="w-full md:h-screen flex items-center mt-[-50px]"
+      className="w-full md:h-screen flex items-center mt-[-10rem]" // Add a class and adjust the margin
       style={{
         height: "auto",
       }}
@@ -59,7 +59,7 @@ const AboutContent = () => {
         <div className="flex justify-center py-12 ">
           <Link href="/">
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 bg-[#e4e7ed] text-[#1f2937] cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp size={30} />
+              <HiOutlineChevronDoubleUp size={20} />
             </div>
           </Link>
         </div>
