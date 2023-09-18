@@ -21,7 +21,7 @@ const Hero = () => {
               <Typewriter
                 text="Oluwadunsin"
                 initialDelay={300}
-                loopDelay={2000}
+                loopDelay={1500}
               />
             </span>
           </h1>

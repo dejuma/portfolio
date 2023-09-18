@@ -24,6 +24,19 @@ html {
   scroll-behavior: smooth !important;
 }
 
+@media (max-width: 640px) {
+  .text-center.mb-5.sm\:py-10.md\:py-10.lg\:py-20 h2 {
+    margin-top: 50px; /* Adjust this value to control the spacing */
+  }
+}
+
+@media (max-height: 1050px) {
+  #hero,
+  #about {
+    margin-top: 1000px; /* Adjust this value to control the spacing */
+  }
+}
+
 @layer base {
   body {
     @apply bg-[#111827] text-gray-400 tracking-wide;

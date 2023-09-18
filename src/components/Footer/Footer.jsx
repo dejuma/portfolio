@@ -21,12 +21,14 @@ const Footer = () => {
             href="https://www.linkedin.com/in/olesin/"
             icon={<FaLinkedinIn />}
             label="LinkedIn"
+            target="_blank"
           />
 
           <SocialLink
             href="https://github.com/dejuma"
             icon={<FaGithub />}
             label="GitHub"
+            target="_blank"
           />
 
           <SocialLink

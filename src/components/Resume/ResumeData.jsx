@@ -16,13 +16,13 @@ export const experienceData = [
     position: "Graduate Engineer - DevOps/Software IVVQ Testing",
     company: "THALES",
     description: [
-      "Developed development pipelines within an Agile framework, documenting and specifying them to meet project requirements.",
-      "Conducted research on appropriate technologies and de-risked concepts in sandboxes, collaborating with DevOps engineers for review.",
-      "Prioritized tasks by liaising with the local DevOps engineer.",
+      "Developed development pipelines within an Agile framework, documented and specified them to meet project requirements.",
+      "Designed and implemented a modular and extensible CI framework, streamlining the development process and improving project efficiency and consistency.",
+      "Prioritised tasks by collaborating with another DevOps engineer.",
       "Created and iteratively improved simple pipelines, working closely with development teams to ensure reliable and robust solutions.",
-      "Extracted relevant metrics from the build pipeline for the software product.",
-      "Virtualized a legacy development pipeline and successfully deployed it on a project, demonstrating technical proficiency to the development team.",
-      "Demonstrated ownership and accountability for assigned work areas.",
+      "Developed a Python script automating project-specific CI pipeline creation, reducing manual setup efforts and ensuring reproducibility.",
+      "Collaborated with cross-functional teams to gather requirements, define project scopes, and ensure the CI framework met diverse project needs.",
+      "Established clear documentation and training materials, facilitating knowledge sharing and new team member onboarding."
     ],
   },
   {
@@ -30,9 +30,11 @@ export const experienceData = [
     position: "Graduate Engineer - Software/System Engineer",
     company: "THALES",
     description: [
-      "Ground truth data in a video file",
-      "Create frontend using Django to create easy access to data.",
-      "Identify issues and create solutions to them to help the sector.",
+      "Ground-truthed drone data within video files to enhance data accuracy and reliability.",
+      "Provided direct programming support to the Algorithm Engineer, contributing to the efficient development and optimisation of algorithms.",
+      "Designed and developed a user-friendly frontend for streamlined data access, improving data utilisation across the organisation.",
+      "Identified operational issues and devised effective solutions, increasing efficiency and effectiveness within the sector.",
+      "Collaborated in software development within the architecture team, including architecture refinement, delivery of high-quality code with rigorous unit testing, and resolution of critical static analysis issues, ensuring robust and reliable software delivery"
     ],
   },
   {
@@ -40,13 +42,13 @@ export const experienceData = [
     position: "Test Analyst",
     company: "TYSY MANAGED SERVICES EMEA",
     description: [
-      "Analysing and interpreting business requirements to formulate comprehensive testing strategies.",
-      "Breaking down complex tasks to test applications, IVR systems, and telephony systems based on Procedure, Requirement, and Solution Documents.",
-      "Collaborating with the team to brainstorm innovative approaches for tackling new testing challenges.",
-      "Developing end-to-end test cases and scripts to ensure comprehensive test coverage.",
-      "Conducting manual tests and documenting test outcomes, including any incidents identified.",
-      "Managing defects and issues raised during testing, ensuring proper tracking and resolution.",
-      "Providing valuable feedback and recommendations to the TMS Test Team and Project Team to improve product quality and processes.",
+      "Analysed and interpreted business requirements to formulate comprehensive testing strategies.",
+      "Devised testing strategies for applications, IVR and telephony systems based on Procedure, Requirement, and Solution Documents.",
+      "Brainstormed innovative approaches with the team to address new testing challenges.",
+      "Developed end-to-end test cases and scripts, ensuring comprehensive test coverage.",
+      "Conducted manual tests and documented test outcomes, including incident identification.",
+      "Managed defects and issues raised during testing, ensuring proper tracking and resolution.",
+      "Provided valuable feedback and recommendations to the TMS Test and Project Team, leading to product quality and process improvements."
     ],
   },
   // Add more experience items...

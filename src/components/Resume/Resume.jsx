@@ -1,12 +1,21 @@
 import React from "react";
 import Link from "next/link";
 import { experienceData, educationData, skillsData } from "./ResumeData";
+// import * as ga from "../lib/ga"; // Import your Google Analytics module
 
 import { AiOutlineFileText } from "react-icons/ai";
 
+const trackDownloadClick = () => {
+  ga.event({
+    action: "download_resume",
+    category: "Button Clicks",
+    label: "Resume",
+  });
+};
+
 const Resume = () => {
   return (
-    <div className="w-full py-10 lg:py-20 xl:py-40 flex items-center">
+    <div className="w-full py-9 flex items-center">
       <div className="max-w-7xl w-full h-full mx-auto p-2 justify-center">
         <div className="text-center mb-5 sm:py-10 md:py-10 lg:py-20">
           <h2 className="text-4xl font-bold mb-0 uppercase">Resume</h2>
@@ -20,11 +29,12 @@ const Resume = () => {
                 </h2>
 
                 <Link
-                  className="px-4 py-3 inline-flex items-center mt-4 text-white bg-blue-500 uppercase rounded hover:bg-blue-600 transition-colors"
+                  className="px-4 py-3 inline-flex items-center text-center mt-4 text-white bg-blue-500 uppercase rounded hover:bg-blue-600 transition-colors"
                   href="/assets/docs/JOlesinCV.pdf"
                   download={"JOlesinCV.pdf"}
                   target="_blank"
                   rel="noopener noreferrer"
+                  // onClick={trackDownloadClick} // Add this onClick handler
                 >
                   <AiOutlineFileText className="mr-2" />
                   Download Resume

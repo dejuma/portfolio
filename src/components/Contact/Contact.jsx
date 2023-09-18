@@ -9,7 +9,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const ContactPage = () => {
   return (
-    <div className="w-full min-h-94vh flex flex-col">
+    <div className="w-full min-h-94vh pt-10 flex flex-col">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="uppercase text-xl tracking-widest text-[#E2C6BC]">
           Contact
@@ -44,12 +44,14 @@ const ContactPage = () => {
                     href="https://www.linkedin.com/in/olesin/"
                     icon={<FaLinkedinIn />}
                     label="LinkedIn"
+                    target="_blank"
                   />
 
                   <SocialLink
                     href="https://github.com/dejuma"
                     icon={<FaGithub />}
                     label="GitHub"
+                    target="_blank"
                   />
 
                   <SocialLink
@@ -76,6 +78,7 @@ const ContactPage = () => {
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
+                      htmlFor="Name"
                       className="border-1 rounded-lg p-3 flex border-gray-300"
                       type="text"
                     />
@@ -85,6 +88,7 @@ const ContactPage = () => {
                       Phone Number
                     </label>
                     <input
+                      htmlFor="telephone"
                       className="border-1 rounded-lg p-3 flex border-gray-300"
                       type="tel"
                     />
@@ -93,6 +97,7 @@ const ContactPage = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
+                    id="email"
                     className="border-1 rounded-lg p-3 flex border-gray-300"
                     type="email"
                   />
@@ -100,6 +105,7 @@ const ContactPage = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
+                    id="subject"
                     className="border-1 rounded-lg p-3 flex border-gray-300"
                     type="text"
                   />
@@ -107,9 +113,10 @@ const ContactPage = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
+                    id="message"
                     className="border-1 rounded-lg p-3 border-gray-300"
                     rows="10"
-                  ></textarea>
+                  />
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
                   Send Message
