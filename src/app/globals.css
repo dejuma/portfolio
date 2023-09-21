@@ -33,7 +33,19 @@ html {
 @media (max-height: 1050px) {
   #hero,
   #about {
-    margin-top: 1000px; /* Adjust this value to control the spacing */
+    margin-top: 100px; /* Adjust this value to control the spacing */
+  }
+}
+
+@media (max-width: 380px) {
+  .unique-p-tag {
+    margin-top: 80px; 
+  }
+}
+
+@media (max-width: 280px) {
+  .unique-p-tag {
+    padding-top: 95px; 
   }
 }
 
@@ -66,4 +78,5 @@ html {
   button {
     @apply shadow-md shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
   }
+ 
 }

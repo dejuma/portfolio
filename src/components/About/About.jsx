@@ -9,7 +9,7 @@ const AboutContent = () => {
   return (
     <div
       id="about"
-      className="w-full md:h-screen flex items-center mt-[-10rem]" // Add a class and adjust the margin
+      className="w-full flex items-center" // Add a class and adjust the margin
       style={{
         height: "auto",
       }}

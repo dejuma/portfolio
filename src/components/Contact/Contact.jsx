@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import SocialLink from "../Shared/SocialLink";
 import contactImg from "/public/assets/contact.png";
@@ -8,6 +9,34 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const ContactPage = () => {
+  const [name, setName] = useState("");
+  const [tel, setTel] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("/api/contact/", {
+        method: "POST",
+        body: JSON.stringify({
+          name,
+          tel,
+          email,
+          subject,
+          message,
+        }),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+    } catch (err) {
+      console.error("Err", err);
+    }
+  };
+
   return (
     <div className="w-full min-h-94vh pt-10 flex flex-col">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -73,12 +102,13 @@ const ContactPage = () => {
           {/* right */}
           <div className="col-span-3 w-full h-auto shadow-lg shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form>
+              <form onSubmit={onSubmit}>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
-                      htmlFor="Name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       className="border-1 rounded-lg p-3 flex border-gray-300"
                       type="text"
                     />
@@ -88,7 +118,8 @@ const ContactPage = () => {
                       Phone Number
                     </label>
                     <input
-                      htmlFor="telephone"
+                      value={tel}
+                      onChange={(e) => setTel(e.target.value)}
                       className="border-1 rounded-lg p-3 flex border-gray-300"
                       type="tel"
                     />
@@ -97,6 +128,8 @@ const ContactPage = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     id="email"
                     className="border-1 rounded-lg p-3 flex border-gray-300"
                     type="email"
@@ -105,6 +138,8 @@ const ContactPage = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
+                    value={subject}
+                    onChange={(e) => setSubject(e.target.value)}
                     id="subject"
                     className="border-1 rounded-lg p-3 flex border-gray-300"
                     type="text"
@@ -113,12 +148,14 @@ const ContactPage = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                     id="message"
                     className="border-1 rounded-lg p-3 border-gray-300"
                     rows="10"
                   />
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
+                <button type="submit" className="w-full p-4 text-gray-100 mt-4 bg-blue-500 hover:bg-blue-600">
                   Send Message
                 </button>
               </form>
