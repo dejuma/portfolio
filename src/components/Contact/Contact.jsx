@@ -68,7 +68,7 @@ const ContactPage = () => {
                   {" "}
                   Connect With Me
                 </p>
-                <div className="flex items-center justify-between my-4 2-full  text-[#1f2937] sm:w-[80%]">
+                <div className="flex items-center justify-between my-4 text-[#1f2937] sm:w-[80%]">
                   <SocialLink
                     href="https://www.linkedin.com/in/olesin/"
                     icon={<FaLinkedinIn />}
@@ -155,7 +155,10 @@ const ContactPage = () => {
                     rows="10"
                   />
                 </div>
-                <button type="submit" className="w-full p-4 text-gray-100 mt-4 bg-blue-500 hover:bg-blue-600">
+                <button
+                  type="submit"
+                  className="w-full p-4 text-gray-100 mt-4 bg-blue-500 hover:bg-blue-600"
+                >
                   Send Message
                 </button>
               </form>

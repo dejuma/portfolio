@@ -55,7 +55,7 @@ const MobileNav = ({ nav, handleNav, links, setNav }) => {
               </li>
             ))}
           </ul>
-          <div className="pt-40">
+          <div className="absolute bottom-0 left-0 w-full px-6 py-2">
             <p className="uppercase tracking-widest text-[#5651e5]">
               {" "}
               Let&apos;s Connect

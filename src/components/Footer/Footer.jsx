@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-gray-800 text-white py-4">
       <div className="max-w-4xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
         <div className="mb-4 lg:mb-0">
-          <p className="text-lg font-semibold">© 2023 | Oluwadunsin Olesin</p>
+          <p className="text-lg font-semibold">© 2024 | Oluwadunsin Olesin</p>
           <p className="text-center text-gray-400 text-sm lg:block sm:block md:block xl:block 2xl:block">
             Built using Next.js and Tailwind CSS
           </p>

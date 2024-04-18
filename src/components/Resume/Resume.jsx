@@ -22,6 +22,7 @@ const Resume = () => {
         </div>
         <div className="grid gap-5 justify-center lg:grid-cols-2 xl:grid-cols-4">
           <div className="col-span-4">
+            {/* Experience Section */}
             <section>
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-primary font-bold mb-0 mr-2 text-[#E2C6BC]">
@@ -61,7 +62,9 @@ const Resume = () => {
                         {/* Remove min-w for small screens */}
                         <ul className="list-disc pl-6">
                           {item.description.map((desc, idx) => (
-                            <li key={idx}>{desc}</li>
+                            <li key={idx} className="no-cursor-pointer">
+                              {desc}
+                            </li>
                           ))}
                         </ul>
                       </div>
@@ -70,6 +73,7 @@ const Resume = () => {
                 </div>
               ))}
             </section>
+            {/* Education Section */}
             <section>
               <h2 className="text-secondary font-bold mb-4 text-[#E2C6BC]">
                 Education
@@ -98,7 +102,9 @@ const Resume = () => {
                       <div className="lg:ml-8">
                         <ul className="list-disc pl-6">
                           {item.description.map((desc, idx) => (
-                            <li key={idx}>{desc}</li>
+                            <li key={idx} className="no-cursor-pointer">
+                              {desc}
+                            </li>
                           ))}
                         </ul>
                       </div>
@@ -107,6 +113,7 @@ const Resume = () => {
                 </div>
               ))}
             </section>
+            {/* Skills Section */}
             <section>
               <div className="card shadow border-0 rounded-xl mb-5 bg-[#1F2937]">
                 <div className="card-body p-5">
