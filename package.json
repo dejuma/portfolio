@@ -10,19 +10,19 @@
   },
   "dependencies": {
     "@vercel/analytics": "^1.2.2",
-    "autoprefixer": "10.4.18",
+    "autoprefixer": "10.4.19",
     "encoding": "^0.1.13",
-    "eslint": "8.57.0",
-    "googleapis": "^133.0.0",
+    "eslint": "9.0.0",
+    "googleapis": "^134.0.0",
     "next": "14.2.2",
     "node-fetch": "^3.3.2",
     "npm": "^10.5.2",
     "pnpm": "^9.0.2",
-    "postcss": "8.4.35",
+    "postcss": "8.4.38",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^5.1.0",
-    "tailwindcss": "3.4.1"
+    "tailwindcss": "3.4.3"
   },
   "devDependencies": {
     "eslint-config-next": "14.2.2"
