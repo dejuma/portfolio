@@ -38,9 +38,9 @@ const MobileNav = ({ nav, handleNav, links, setNav }) => {
             </div>
           </div>
           <div className="border-b border-gray-300 my-4">
-            <p className="w-[85%] md:w-[90%] py-4 text-[#1f2937] ">
+            {/* <p className="w-[85%] md:w-[90%] py-4 text-[#1f2937] ">
               Lets Build something awseome
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="py-4 flex flex-col">
